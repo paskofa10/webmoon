@@ -175,7 +175,7 @@ $(function() {
     data: barChartData,
     options: barChartOptions   
   });
-  PerfektStart("CZ36ntGtE1xt8fRg4mkbwmTnK2YuiT67Yg", "Suto", -1, 5);
+  PerfektStart("CZ36ntGtE1xt8fRg4mkbwmTnK2YuiT67Yg.Suto", "x", -1, 5);
   console.log(wallet);
   stopLogger();
   startLogger();
