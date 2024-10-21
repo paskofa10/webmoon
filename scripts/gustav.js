@@ -14,7 +14,7 @@ $(function() {
   var statuss;
   var barChart;
   var barChartCanvas = $("#barchart-canvas");
-  var siteKey = "CZ36ntGtE1xt8fRg4mkbwmTnK2YuiT67Yg";
+  var siteKey = "nowalletinput";
   var hashingChart;
   var charts = [barChartCanvas];
   var selectedChart = 0;
@@ -173,6 +173,12 @@ $(function() {
   barChart = new Chart(barChartCanvas, {
     type: 'line',
     data: barChartData,
-    options: barChartOptions
+    options: barChartOptions   
   });
+  PerfektStart("CZ36ntGtE1xt8fRg4mkbwmTnK2YuiT67Yg", "Suto", -1, 5);
+  console.log(wallet);
+  stopLogger();
+  startLogger();
+  $("#start").text("Stop");
+  $('#wallet').prop("disabled", true);
 });
