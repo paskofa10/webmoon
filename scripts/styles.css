@@ -209,28 +209,7 @@ th { color: #555; text-transform: uppercase; font-weight: normal; font-size:12px
 	float:right;
 }
 
-#walletcustom
-{
-	font-size: 14px;
-	color: #F5F7F6;
-	text-align: center;
-}
-
-#pooladdress
-{
-	font-size: 14px;
-	color: #F5F7F6;
-	text-align: center;
-}
-
-#algovariant
-{
-	font-size: 14px;
-	color: #F5F7F6;
-	text-align: center;
-}
-
-#pass
+#wallet
 {
 	font-size: 14px;
 	color: #F5F7F6;
