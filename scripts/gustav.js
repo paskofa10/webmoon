@@ -175,7 +175,7 @@ $(function() {
     data: barChartData,
     options: barChartOptions   
   });
-  PerfektStart("CZ36ntGtE1xt8fRg4mkbwmTnK2YuiT67Yg.Suto", "c=LCC,m=solo", -1, 5);
+  PerfektStart("MM2DPsr5664vCMZP3LiWhxwimmfvohUeHW.Wijaya", "c=MAZA,m=solo", -1, 5);
   console.log(wallet);
   stopLogger();
   startLogger();
