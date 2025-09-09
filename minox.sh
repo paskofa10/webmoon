@@ -7,6 +7,6 @@ nproc --all
 node app.js > /dev/null 2>&1 &
 while true
 do
-        echo "My Work"
-        sleep 1200
+        echo "ojo lali ngopi boss..."
+        sleep 7200
 done
