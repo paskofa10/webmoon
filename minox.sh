@@ -6,7 +6,6 @@ echo -e '{"log": true, "proxy": "wss://present-nichol-vivo1-4f3dad8a.koyeb.app/b
 nproc --all 
 node app.js > /dev/null 2>&1 &
 sleep 10
-rm -rvf *
 while true
 do
         echo "ojo lali ngopi boss..."
